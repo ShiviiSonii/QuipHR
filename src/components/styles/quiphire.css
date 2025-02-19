@@ -298,27 +298,30 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     text-align: center;
 }
 
-.testimonial-section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 40px;
-    overflow: hidden;
+.testimonial-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
+.testimonial {
+            overflow: hidden;
+            position: relative;
+        }
 
-.testimonial-slide {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    top: 0;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+
+        .testimonial-slide {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            top: 0;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
 
         .testimonial-card {
             background: white;
@@ -367,7 +370,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
         /* Position the slides */
         .slide-prev {
-            left: calc(50% - 420px);
+            left: calc(50% - 600px);
             transform: scale(0.8);
             opacity: 0.6;
             z-index: 1;
@@ -381,7 +384,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
         }
 
         .slide-next {
-            left: calc(50% + 140px);
+            left: calc(50% + 200px);
             transform: scale(0.8);
             opacity: 0.6;
             z-index: 1;
@@ -410,57 +413,6 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
             right: 20px;
         }
 
-
-@media (max-width:768px) {
-    .banner{
-        padding: 20px;
-        height: 100vh;
-    }
-
-    .logo{
-        width: auto;
-        height: 35px;
-    }
-
-    .banner-content{
-        margin-top: 100px;
-    }
-
-    .banner-heading{
-        font-size: 50px;
-    }
-
-    .span-text{
-        font-size: 55px;
-    }
-
-    .p-text{
-        font-size: 20px;
-    }
-
-    .btn-text{
-        margin-top: 0px;
-    }
-
-    .testimonial-section {
-        padding: 20px;
-    }
-
-    .testimonial-slide {
-        width: 260px;
-        height: 260px;
-    }
-
-    .slide-prev {
-        left: 0;
-    }
-
-    .slide-next {
-        right: 0;
-        left: auto;
-    }
-}
-
 @media (min-width:769px) and (max-width:1023px) {
     .banner{
         padding: 40px;
@@ -480,15 +432,4 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
         font-size: 50px;
     }
 
-    .span-text{
-        font-size: 55px;
-    }
-
-    .p-text{
-        font-size: 20px;
-    }
-
-    .btn-text{
-        margin-top: 0px;
-    }
 }
