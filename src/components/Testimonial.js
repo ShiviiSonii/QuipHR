@@ -39,7 +39,6 @@ class TestimonialComponent extends HTMLElement {
         </div>
       `;
 
-    // Now initialize the slider functionality
     this.initCarousel();
   }
 
@@ -119,7 +118,7 @@ class TestimonialComponent extends HTMLElement {
       }
     };
 
-    updateSlides(); // Initialize the slides
+    updateSlides();
   }
 }
 
