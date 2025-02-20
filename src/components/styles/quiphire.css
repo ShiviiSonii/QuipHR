@@ -280,7 +280,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 .service-heading{
     text-align: center;
     font-weight: 400;
-    font-size: 66px;
+    font-size: 80px;
     padding-bottom: 40px;
     color: #ffffff;
     position: relative;
@@ -290,7 +290,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     font-family: Playfair Display;
     font-weight: 700;
     font-style: italic;
-    font-size: 66px;
+    font-size: 80px;
 }
 
 .job-titles{
@@ -329,13 +329,13 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     background: 
         linear-gradient(180deg, #F7F7F7 50%, rgba(255, 255, 255, 0) 100%),
         url("../../../public/assets/images/grid.png");
-    background-blend-mode: multiply; 
+    background-blend-mode: lighten; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh; 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -344,7 +344,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     font-weight: 400;
     font-size: 80px;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .choose-us-span {
@@ -352,21 +352,24 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .choose-us-grid {
-    display:grid;
-    grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    row-gap: 40px;
 }
 
-.choose-us-div{
+.choose-us-div {
     box-shadow: 0px 5px 16px 0px #080F340F;
     background-color: #FFFFFF;
-    width: 280px;
-    height: 300px;
-    border-radius: 34px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     padding: 30px 20px;
 }
 
@@ -375,11 +378,14 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     font-weight: 500;
     font-size: 35px;
     text-align: center;
+    padding: 0px 15px;
 }
 
 .testimonial-section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, #F7F7F7 100%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 .testimonial {
@@ -405,7 +411,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 .testimonial-card {
     background: white;
     border-radius: 8px;
-    padding: 25px;
+    padding: 10px 25px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 100%;
     box-sizing: border-box;
@@ -415,7 +421,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .testimonial-content {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .testimonial-avatar {
@@ -427,24 +433,26 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .testimonial-text {
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 22px;
     color: #333;
     margin-bottom: 15px;
-    max-height: 80px;
+    max-height: 120px;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 .testimonial-author {
     font-weight: bold;
     color: #222;
-    margin-bottom: 3px;
-    font-size: 14px;
+    margin: 0px;
+    font-size: 16px;
 }
 
 .testimonial-position {
     color: #666;
-    font-size: 12px;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 5px;
 }
 
 .slide-prev {
@@ -834,7 +842,12 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
         display: none;
     }
 
-    .service-heading, .service-heading-span{
+    .service-heading{
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    
+    .service-heading-span{
         font-size: 35px;
     }
 
@@ -853,5 +866,59 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
     .job-list> li {
         padding: 10px 0px;
+    }
+
+    .choose-us-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .choose-us-heading{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .choose-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        row-gap: 10px;
+    }
+
+    .choose-us-div {
+        max-width: 100%; 
+        min-height: 150px; 
+        padding: 15px 0px;
+        height: 50px;
+    }
+
+    .choose-us-div > img{
+        height: 55px;
+        width: auto;
+    }
+
+    .choose-us-div-heading{
+        font-size: 15px;
+    }
+
+    .testimonial-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .testimonial-content{
+        text-align: center;
+    }
+
+    .next-button{
+        right: 0px;
+    }
+
+    .prev-button{
+        left: 0px;
+    }
+
+    .testimonial-text{
+        font-size: 15px;
+        margin: 20px 30px;
     }
 }
