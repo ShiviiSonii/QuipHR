@@ -632,6 +632,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
 .above-footer-para{
     font-family: Raleway;
+    text-align: center;
     font-weight: 400;
     font-size: 55px;
     color: #00000066;
@@ -647,8 +648,8 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
 .footer-section {
     background-color: #2B4659;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 .footer {
@@ -716,6 +717,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .footer-bottom > p {
+    margin-top: 50px;
     padding-top: 20px;
     color: #fff;
     border-top: 1px solid #FFFFFF
@@ -982,5 +984,13 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
     .email-data > p, .phone-data > p {
         font-size: 15px;
+    }
+
+    .above-footer-para{
+        font-size: 35px;
+    }
+
+    .above-footer-span {
+        font-size: 35px;
     }
 }
