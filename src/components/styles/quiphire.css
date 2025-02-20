@@ -579,13 +579,13 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     margin: 30px;
 }
 
-.contact-section {
+/* .contact-section {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+} */
 
 .contact {
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 29px 9px #00000040;
     display: flex;
@@ -594,9 +594,9 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .contact-img{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 70%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 60%;
 }
 
 .contact-data{
@@ -620,6 +620,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .email-data > p, .phone-data > p{
+    font-family: "Inter";
     font-size: 25px;
     margin: 0;
 }
@@ -950,6 +951,36 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     }
 
     .form-btn{
+        font-size: 15px;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact-img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    .contact-data{
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .email-data, .phone-data{
+        padding: 10px 20px;
+        text-align: center;
+        /* width: auto; */
+    }
+
+    .email-data > h4, .phone-data > h4 {
+        font-size: 18px;
+    }
+
+    .email-data > p, .phone-data > p {
         font-size: 15px;
     }
 }
