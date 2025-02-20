@@ -24,7 +24,7 @@ class FormComponent extends HTMLElement {
             </div>
         </div>
       </div>
-      <button class="form-btn">Next</button>
+      <button class="form-btn">Submit</button>
       </div>`;
   }
 }
