@@ -167,8 +167,8 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .steps-container {
@@ -273,16 +273,17 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
                 #2B4659; 
     background-blend-mode: luminosity; 
     background-size: cover;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .service-heading{
     text-align: center;
     font-weight: 400;
     font-size: 66px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     color: #ffffff;
+    position: relative;
 }
 
 .service-heading-span{
@@ -294,10 +295,8 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
 .job-titles{
     border: 3px solid #FFFFFF5E;
-    border-radius: 12px;
+    border-radius: 25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .arrow-icon {
@@ -312,8 +311,10 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     text-align: center;
     list-style: none;
     color: var(--text-color);
-    margin: 30px 0px;
-    border-right: 2px dashed #FFFFFF
+    margin: 50px 0px;
+    border-right: 2px dashed #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .job-list:nth-child(3){
@@ -321,7 +322,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 }
 
 .job-list> li{
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
 .choose-us-section {
@@ -813,7 +814,7 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     }
 
     .steps-container-2{
-        padding: 10px;
+        padding: 20px 20px;
     }
 
     .steps-container-heading{
@@ -822,6 +823,35 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
     .steps-container-description{
         font-size: 15px;
-        margin-bottom: 15px;
+    }
+
+    .service-section{
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .arrow-icon{
+        display: none;
+    }
+
+    .service-heading, .service-heading-span{
+        font-size: 35px;
+    }
+
+    .job-titles{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .job-list{
+        font-size: 20px;
+        margin: 0px;
+        border-right: none;
+        border-bottom: 2px dashed #FFFFFF;
+        padding: 20px 0px;
+    }
+
+    .job-list> li {
+        padding: 10px 0px;
     }
 }
