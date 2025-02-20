@@ -25,7 +25,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .banner-content{
@@ -42,15 +42,15 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     padding: 0;
 }
 
-.logo{
-    width: auto;
-    height: 50px;
-}
 
 .banner-heading{
     font-weight: 600;
     font-size: 75px;
     color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .header {
@@ -58,11 +58,92 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     padding: 0;
 }
 
-.span-text{
+
+
+/* .span-text{
     font-family: Playfair Display;
     font-weight: 400;
     font-size: 80px;
     font-style: italic;
+} */
+
+
+.animation {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animation>div {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+    animation: slide-animation 16s infinite ease-in-out
+}
+
+.animation>div>div {
+    height: 100px;
+    /* padding: 10px; */
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: italic;
+    border-radius: 3px;
+    color: #fff
+}
+/* 
+.first div {
+    background-color: #555
+}
+
+.second div {
+    background-color: #cca263
+}
+
+.third div {
+    background-color: #a08b47
+}
+
+.fourth div {
+    background-color: #938567
+} */
+
+@keyframes slide-animation {
+    0% {
+        transform: translateY(0px)
+    }
+
+    25% {
+        transform: translateY(0px)
+    }
+
+    30% {
+        transform: translateY(-100px)
+    }
+
+    55% {
+        transform: translateY(-100px)
+    }
+
+    60% {
+        transform: translateY(-200px)
+    }
+
+    75% {
+        transform: translateY(-200px)
+    }
+
+    80% {
+        transform: translateY(-200px)
+    }
+
+    90% {
+        transform: translateY(0px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
 }
 
 .p-text{
@@ -79,7 +160,6 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     padding: 15px 30px;
     border-radius: 30px;
     border: none;
-    margin-top: 10px;
     color: var(--text-color);
 }
 
@@ -95,7 +175,8 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .steps-container {
@@ -137,10 +218,6 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     justify-content: center;
 }
 
-.thumbnail{
-    padding-bottom: 10px;
-}
-
 
 .steps-container-1, .steps-container-2{
     flex: 1;
@@ -157,34 +234,44 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     font-weight: 700;
 }
 
+.thumbnail{
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #2B4659;
+    border-radius: 30px;
+}
+
 .steps-img{
     height: auto;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 30px;
     margin-top: 50px;
+    box-shadow: 0px 4px 14px 4px #00000040;
 }
 
 .steps-container-2{
-    border-radius: 10px;
+    border-radius: 30px;
     border: 1px solid #2B4659;
     background-color: var(--text-color);
-    padding: 20px 40px;
+    padding: 40px;
     display: flex;
+    gap: 30px;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .steps-container-heading{
     font-family: Inter;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     color: #2B4659;
 }
 
 .steps-container-description{
     font-family: Raleway;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     margin-top:5px;
     margin-bottom: 5px;
 }
@@ -631,10 +718,14 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
     border-top: 1px solid #FFFFFF
 }
 
-@media (min-width:769px) and (max-width:1023px) {
-    .banner{
-        padding: 40px;
-        height: 100vh;
+@media (max-width:768px){
+    .quip-section{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .banner-section{
+        height: 80vh;
     }
 
     .logo{
@@ -644,10 +735,75 @@ h1, h2, h3, h4,h5,h6 p, ul, li{
 
     .banner-content{
         margin-top: 100px;
+        max-width: fit-content;
     }
 
     .banner-heading{
-        font-size: 50px;
+        font-size: 35px;
+        gap: 8px;
     }
 
+    .animation{
+        height: 50px;
+    }
+
+    .p-text{
+        font-size: 25px;
+    }
+
+    .animation > div > div{
+        font-size: 40px;
+        height: 50px;
+    }
+
+    .steps-section{
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .steps-section::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        background-color: #fff;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        top: -30px;
+        left: 0;
+    }
+
+    .thumbnail{
+        width: 330px;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    
+    .steps-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .steps-heading{
+        font-size: 35px;
+    }
+
+    .steps-img{
+        margin-top: 10px;
+
+    }
+
+    .steps-container-2{
+        padding: 10px;
+    }
+
+    .steps-container-heading{
+        font-size: 20px;
+    }
+
+    .steps-container-description{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
 }

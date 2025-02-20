@@ -1,11 +1,23 @@
 class BannerComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="banner">
-    <img src="../../public/assets/images/logo.png" class="logo" alt="logo"/></li>
+    <menu-bar-component></menu-bar-component>
     <div class="banner-content">
-      <h1 class="banner-heading">${this.getAttribute(
-        "text"
-      )}<span class="span-text"> ${this.getAttribute("span_text")}</span></h1>
+      <div class="banner-heading-span">
+      <h1 class="banner-heading">${this.getAttribute("text")}
+      <div class="animation">
+            <div class="first">
+                <div>Simple</div>
+            </div>
+            <div class="second">
+                <div>Simple</div>
+            </div>
+            <div class="third">
+                <div>Simple</div>
+            </div>
+        </div>
+      </h1>
+      </div>
       <p class="p-text">${this.getAttribute("p_text")}</p>
       <button class="btn-text">${this.getAttribute("btn_text")}</button>
     </div>

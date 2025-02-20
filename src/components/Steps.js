@@ -1,7 +1,7 @@
 class StepsComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="steps">
-        <img src="../../public/assets/images/youtube-thumbnail.png" alt="video" class="thumbnail"/>
+        <iframe class="thumbnail" width="900px" height="500px" src="https://www.youtube.com/embed/mVtUlRpoCzs?si=D4AFjGbAOZ7Vwrts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="steps-container">
             <div class="steps-container-1">
                 <h2 class="steps-heading">Easy steps for <span class="steps-heading-span">easy hiring</span></h2>
