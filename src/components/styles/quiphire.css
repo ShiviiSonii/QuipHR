@@ -52,17 +52,16 @@ a{
     justify-content: space-between;
 }
 
-.banner-content{
+.banner-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: self-start;
+    align-items: flex-start;
     padding: 60px 0;
     max-width: 820px;
 }
 
-
-.banner-heading{
+.banner-heading {
     font-weight: 600;
     font-size: 75px;
     color: var(--text-color);
@@ -78,49 +77,49 @@ a{
     position: relative;
 }
 
-.animation>div {
+.animation > div {
     display: flex;
     flex-direction: column;
     transform: translateY(0);
-    animation: slide-animation 16s infinite ease-in-out
+    animation: slide-animation 12s infinite ease-in-out;
 }
 
-.animation>div>div {
-    height: 75px;
-    /* padding: 10px; */
-    font-family: Playfair Display;
+.animation > div > div {
+    height: 95px;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 75px;
     font-style: italic;
     border-radius: 3px;
-    color: #fff
+    color: #fff;
 }
 
 @keyframes slide-animation {
-    0%, 20% {
-        transform: translateY(-18px);
+    0%, 15% {
+        transform: translateY(-19px);
     }
-    
-    30% {
-        transform: translateY(-96px);
+
+    35% {
+        transform: translateY(-114px);
     }
-    
-    50% {
-        transform: translateY(-96px);
+
+    55% {
+        transform: translateY(-210px);
     }
-    
-    70% {
-        transform: translateY(-170px);
+
+    65% {
+        transform: translateY(-114px);
     }
 
     85% {
-        transform: translateY(-96px);
+        transform: translateY(-114px);
     }
 
     100% {
-        transform: translateY(-18px);
+        transform: translateY(-19px);
     }
 }
+
 
 
 .p-text{
@@ -825,19 +824,19 @@ a{
     }
 
     @keyframes slide-animation {
-        0%, 20% {
+        0%, 15% {
             transform: translateY(-2px);
         }
-        
-        30% {
+    
+        35% {
             transform: translateY(-2px);
         }
-        
-        50% {
+    
+        55% {
             transform: translateY(-48px);
         }
-        
-        70% {
+    
+        65% {
             transform: translateY(-48px);
         }
     
@@ -846,7 +845,7 @@ a{
         }
     
         100% {
-            transform: translateY(-48px);
+            transform: translateY(-2px);
         }
     }
 
