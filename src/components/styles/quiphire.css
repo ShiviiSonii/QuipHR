@@ -317,14 +317,12 @@ a{
 }
 
 .steps-container-heading{
-    font-family: Inter;
     font-weight: 700;
     font-size: 30px;
     color: #2B4659;
 }
 
 .steps-container-description{
-    font-family: Raleway;
     font-weight: 400;
     font-size: 25px;
     margin-top:5px;
@@ -369,7 +367,6 @@ a{
 
 .job-list {
     flex: 1;
-    font-family: Raleway;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
@@ -404,7 +401,6 @@ a{
 
 
 .choose-us-heading{
-    font-family: Raleway;
     font-weight: 400;
     font-size: 80px;
     text-align: center;
@@ -438,8 +434,7 @@ a{
 }
 
 .choose-us-div-heading{
-    font-family: Raleway;
-    font-weight: 500;
+   font-weight: 500;
     font-size: 35px;
     text-align: center;
     padding: 0px 15px;
@@ -580,7 +575,6 @@ a{
 }
 
 .form-para {
-    font-family: DM Sans;
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
@@ -612,7 +606,6 @@ a{
 }
 
 .form-span{
-    font-family: DM Sans;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -628,7 +621,6 @@ a{
 }
 
 .form-btn{
-    font-family: Poppins;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -675,7 +667,6 @@ a{
 }
 
 .email-data > h4, .phone-data > h4{
-    font-family: Raleway;
     font-weight: 700;
     font-size: 28px;
 }
@@ -694,7 +685,6 @@ a{
 }
 
 .above-footer-para{
-    font-family: Raleway;
     text-align: center;
     font-weight: 400;
     font-size: 55px;
@@ -721,7 +711,6 @@ a{
     background-color: var(--bg-color);
     color: var(--bg-color);
     width: 100%;
-    font-family: Arial,sans-serif;
     text-align: center;
     left: 0;
     bottom: 0;
@@ -745,7 +734,8 @@ a{
 .footer-phone {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 14px
+    font-size: 14px;
+    font-family: Inter;
 }
 
 .footer-phone:hover {
