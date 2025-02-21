@@ -3,12 +3,12 @@ class MenuBarComponent extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
           <img src="../../public/assets/images/logo.png" alt="logo" class="logo"/>
-          <ul class="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="nav-links header-container borderXwidth">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+          </div>
           <button class="menu-toggle" id="menuBtn">
               ☰
           </button>
