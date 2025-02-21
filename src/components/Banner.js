@@ -19,7 +19,9 @@ class BannerComponent extends HTMLElement {
       </h1>
       </div>
       <p class="p-text">${this.getAttribute("p_text")}</p>
-      <button class="btn-text">${this.getAttribute("btn_text")}</button>
+      <button class="btn-text" href="#form-section"><a href="#form-section" class="links">${this.getAttribute(
+        "btn_text"
+      )}</a></button>
     </div>
     </div>`;
   }

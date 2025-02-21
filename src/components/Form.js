@@ -1,6 +1,6 @@
 class FormComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<form class="form">
+    this.innerHTML = `<form class="form" id="form-section">
       <p class="form-para">Please fill your information so we can get in touch with you.</p>
       <div class="form-fields">
         <div class="form-field">

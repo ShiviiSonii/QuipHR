@@ -8,6 +8,10 @@ body{
     font-family: Raleway, Open-Sans;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --text-color: #ffffff;
 }
@@ -22,9 +26,15 @@ body{
     padding-right: 80px
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li{
+h1, h2, h3, h4, h5, h6, p, ul, li, a{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: var(--text-color);
 }
 
 
@@ -1054,6 +1064,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
     .above-footer-span {
         font-size: 35px;
+    }
+
+    .footer-container{
+        flex-direction: column;
     }
 }
 

@@ -33,10 +33,10 @@ class FooterComponent extends HTMLElement {
       <div class="">
         <h3>Social Links</h3>
         <ul>
-          <li><a href="">Linkedin</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Twitter</a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+          <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
         </ul>
       </div>
     </div>
