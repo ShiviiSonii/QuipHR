@@ -30,6 +30,15 @@ class FooterComponent extends HTMLElement {
           <li><a href="">Help</a></li>
         </ul>
       </div>
+      <div class="">
+        <h3>Social Links</h3>
+        <ul>
+          <li><a href="">Linkedin</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 QuipHire | All Rights Reserved</p>
